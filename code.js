@@ -57,3 +57,22 @@ function(){
 }
 ,false);
 
+const form=document.querySelector(".contact_form");
+
+function envoieMessage(e){
+    e.preventDefault();
+    const mail=document.querySelector(".mail");
+    const msg=document.querySelector(".msg");
+
+    Email.send({
+        SecureToken : "34f8ae09-796b-4320-88ea-ff825d4379ac",
+        To : 'anthonyverdon10@gmail.com',
+        From : email.value,
+        Subject : "message portfolio",
+        Body : msg.value
+    }).then(
+    message => alert(message)
+);
+}
+
+form.addEventListener('boutonSuggestion',envoieMessage)
