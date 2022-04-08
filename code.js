@@ -1,3 +1,5 @@
+/* fonction pour ouvrir le menu */
+
 const menu=document.getElementById("menu");
 
 function closemenu(){
@@ -7,6 +9,10 @@ function closemenu(){
 function openmenu(){
     menu.style.top ="0";
 }
+
+
+/* fonction pour changer la couleur de la barre menu */
+
 
 let lastScrollTop = 0;
 $(window).scroll(function(event){
@@ -27,6 +33,67 @@ $(window).scroll(function(event){
    }
    lastScrollTop = st;  
 });
+
+
+/* fonction traduction site en français */
+
+
+function traductionFrancais(){
+    //texte
+    const texteAnglais=document.getElementsByClassName("anglais");
+    $(texteAnglais).removeClass('affiche');
+    $(texteAnglais).addClass('efface');
+    const texteFrançais=document.getElementsByClassName("francais");
+    $(texteFrançais).removeClass('efface');
+    $(texteFrançais).addClass('affiche');
+
+    //bouton
+    const drapeauAnglais=document.getElementsByClassName("drapeauAnglais");
+    const drapeauAnglaisAssombri=document.getElementsByClassName("drapeauAnglaisAssombri");
+    $(drapeauAnglais).removeClass('affiche');
+    $(drapeauAnglais).addClass('efface');
+    $(drapeauAnglaisAssombri).removeClass('efface');
+    $(drapeauAnglaisAssombri).addClass('affiche');
+    const drapeauFrançais=document.getElementsByClassName("drapeauFrançais");
+    const drapeauFrançaisAssombri=document.getElementsByClassName("drapeauFrançaisAssombri");
+    $(drapeauFrançaisAssombri).removeClass('affiche');
+    $(drapeauFrançaisAssombri).addClass('efface');
+    $(drapeauFrançais).removeClass('efface');
+    $(drapeauFrançais).addClass('affiche');
+}
+
+
+/* fonction traduction site en anglais */
+ 
+
+function traductionAnglais(){
+    const texteAnglais=document.getElementsByClassName("anglais");
+    $(texteAnglais).removeClass('efface');
+    $(texteAnglais).addClass('affiche');
+    const texteFrançais=document.getElementsByClassName("francais");
+    $(texteFrançais).removeClass('affiche');
+    $(texteFrançais).addClass('efface');
+
+    //bouton
+    const drapeauAnglais=document.getElementsByClassName("drapeauAnglais");
+    const drapeauAnglaisAssombri=document.getElementsByClassName("drapeauAnglaisAssombri");
+    $(drapeauAnglaisAssombri).removeClass('affiche');
+    $(drapeauAnglaisAssombri).addClass('efface');
+    $(drapeauAnglais).removeClass('efface');
+    $(drapeauAnglais).addClass('affiche');
+    const drapeauFrançais=document.getElementsByClassName("drapeauFrançais");
+    const drapeauFrançaisAssombri=document.getElementsByClassName("drapeauFrançaisAssombri");
+    $(drapeauFrançais).removeClass('affiche');
+    $(drapeauFrançais).addClass('efface');
+    $(drapeauFrançaisAssombri).removeClass('efface');
+    $(drapeauFrançaisAssombri).addClass('affiche');
+}
+
+traductionFrancais()//on fait un appel pour que, quand on charge la page, on soit sur la version française
+
+
+/* fonctions pour l'affichage du discord et du mail dans le footer */
+
 
 /** Ici la méthode addEventListener est appliquée à l'élément qui a pour ID 'survol' */
 document.getElementById('ImageGmail').addEventListener('mouseenter',

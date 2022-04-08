@@ -31,7 +31,45 @@ header.couleurScroll{
 
 #logo{
     height:6vw;
-    padding:0.5vw 0 0 1vw ;
+    position:absolute;
+    top:0.5vw;
+    left:1vw;
+}
+
+.efface{
+    opacity:0;
+}
+
+.affiche{
+    opacity:1;
+}
+
+.drapeauFrançais{
+    width:4vw;
+    position:absolute;
+    top:1.6vw;
+    left:10vw;
+}
+
+.drapeauFrançaisAssombri{
+    width:4vw;
+    position:absolute;
+    top:1.6vw;
+    left:10vw;
+}
+
+.drapeauAnglais{
+    width:4vw;
+    position:absolute;
+    top:1.6vw;
+    left:15vw;}
+
+.drapeauAnglaisAssombri{
+    width:4vw;
+    position:absolute;
+    top:1.6vw;
+    left:15vw;
+    
 }
 
 #texte{
