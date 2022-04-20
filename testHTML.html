@@ -1,0 +1,23 @@
+<html>
+<head>
+
+</head>
+<body>
+    <img src="images/logo gmail.png" id="ImageGmail">
+    <p  id="texteGmail" >anthonyverdon10@gmail.com</p>
+
+
+
+<!-- on indique le JavaScript par la balise script, ou encore mieux en utilisant un fichier externe-->
+<script>
+    /** Ici la méthode addEventListener est appliquée à l'élément qui a pour ID 'survol' */
+    document.getElementById('ImageGmail').addEventListener('mouseenter',
+    /** cette méthode comprends la détection de l'événement ici onmouseenter pour un survol et une fonction qui va déterminenr l'action à effectuer lorsque l'événement est détecté*/
+    function(){
+    /* cette fonction indique de changer le style par l'attribut style de la balise concernnée- ici l'élément ayant pour id 'change'*/
+    document.getElementById('texteGmail').setAttribute('style', 'font-weight:bold;color:red;background-color:blue;');
+    }
+    ,false);
+        </script>
+</body>
+</html>

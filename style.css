@@ -1,0 +1,548 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:Verdana,Arial;
+    height:100%
+}
+
+header{
+    background-color:#fff;
+    height:7vw;
+    width:100%;
+    position:fixed;
+    top:0;/*quand on utilise position, on peut préciser top, right, bottom, left*/
+    transition:1s;/*fait la transition après l'effet ( ici scroll ) en 1s*/
+    z-index:3;
+    opacity:1
+}
+
+header.scrollVersBas {
+    transition:1s;
+    opacity:0
+}
+
+header.couleurScroll{
+    transition:1s;
+    background-color:rgb(0, 162, 255);
+}
+
+#logo{
+    height:6vw;
+    position:absolute;
+    top:0.5vw;
+    left:1vw;
+}
+
+.efface{
+    opacity:0;
+}
+
+.affiche{
+    opacity:1;
+}
+
+.drapeauFrançais{
+    width:4vw;
+    position:absolute;
+    top:1.6vw;
+    left:10vw;
+}
+
+.drapeauFrançaisAssombri{
+    width:4vw;
+    position:absolute;
+    top:1.6vw;
+    left:10vw;
+}
+
+.drapeauAnglais{
+    width:4vw;
+    position:absolute;
+    top:1.6vw;
+    left:15vw;}
+
+.drapeauAnglaisAssombri{
+    width:4vw;
+    position:absolute;
+    top:1.6vw;
+    left:15vw;
+    
+}
+
+#texte{
+    font-size:2.5vw;
+    position:absolute;
+    top:0.5vw;
+    right:35vw;
+    bottom:0;
+    left:35vw;
+    text-align:center;  
+    color:#000;
+    text-decoration:underline;
+}
+
+/* pour le menu*/
+nav{
+    position:absolute;
+    width:100%;
+    height:100vh;
+    background:rgba(0, 0, 0, 0.9);
+    z-index:2;
+    top:-100vh;
+    left:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    transition:1s;
+}
+
+nav ul li{
+    list-style:none;
+    margin:1vw 0;
+}
+
+nav ul li a{
+    text-decoration:none;
+    font-size:2vw;
+    color:#fff;
+    padding:0.3vw;
+    letter-spacing:0.25vw;
+    position:relative;
+}
+
+nav ul li a::after{
+    content:"";
+    height:0.1vh;
+    width:0;
+    background:#fff;
+    position:absolute;
+    bottom:0;
+    left:0;
+    transition:width 0.5s;
+
+}
+nav ul li a:hover::after{
+    width:100%;
+}
+
+.cross-icon{
+    height:2.5vw;
+    position:absolute;
+    right:0;
+    top:0;
+    padding:2vw 3vw 0 0 ;
+    cursor:pointer;
+}
+
+.menu-icon{
+    cursor:pointer;
+    padding:2vw 3vw 0 0 ;
+    float:right;
+    height:2.5vw;
+}
+/* fin menu */
+
+#rondMoi{
+    position:absolute;
+    top:25vw;
+    left:15vw;
+    right:55vw;
+    bottom:50vw;
+    width:30vw;
+    cursor:pointer;
+    border-radius:50%;/*arrondi les angles*/
+    opacity:1;
+    z-index:-1;/*layer*/
+}
+
+#rondMoi:hover{
+    opacity:0;
+}
+
+#rondCaché1{
+    position:absolute;
+    top:25vw;
+    left:15vw;
+    right:55vw;
+    bottom:50vw;
+    width:30vw;
+    z-index:-2;
+    border-radius:50%;
+}
+
+#rondProjet{
+    position:absolute;
+    top:25vw;
+    left:55vw;
+    right:15vw;
+    bottom:50vw;
+    width:30vw;
+    cursor:pointer;
+    border-radius:50%;
+    opacity:1;
+    z-index:-1;
+}
+
+#rondProjet:hover{
+    opacity:0;
+}
+
+#rondCaché2{
+    position:absolute;
+    top:25vw;
+    left:55vw;
+    right:15vw;
+    bottom:50vw;
+    width:30vw;
+    z-index:-2;
+    border-radius:50%;
+}
+
+#intro{
+    text-align:justify;
+    position:absolute;
+    top:12vw;
+    right:35vw;
+    bottom:103vw;
+    left:35vw;
+    font-size:1.5vw
+}
+
+#GrandTitreMoi{
+    position:absolute;
+    top:60vw;
+    right:10vw;
+    bottom:103vw;
+    left:38vw;
+    font-size:3vw;
+    text-decoration:underline;
+}
+
+#MoiTitre1{
+    position:absolute;
+    top:70vw;
+    right:0;
+    bottom:0;
+    left:3vw;
+    font-size:2vw;
+    float:left;
+}
+
+#MoiTexte1{
+    
+    position:absolute;
+    top:74vw;
+    right:0;
+    bottom:0;
+    left:7vw;
+    float:left;
+    text-align:justify;
+    font-size:1.5vw;
+    width:40%;
+}
+
+#MoiTitre2{
+    position:absolute;
+    top:87vw;
+    right:0;
+    bottom:0;
+    left:63vw;
+    font-size:2vw;
+    float:right;
+}
+
+#MoiTexte2{
+    
+    position:absolute;
+    top:91vw;
+    right:7vw;
+    bottom:0;
+    left:53vw;
+    float:right;
+    text-align:justify;
+    font-size:1.5vw;
+    width:40%;
+}
+
+#MoiTitre3{
+    position:absolute;
+    top:111vw;
+    right:0;
+    bottom:0;
+    left:3vw;
+    font-size:2vw;
+    float:left;
+}
+
+#MoiTexte3{
+    
+    position:absolute;
+    top:115vw;
+    right:0;
+    bottom:0;
+    left:7vw; 
+    float:left;
+    text-align:justify;
+    font-size:1.5vw;
+    width:40%;
+}
+
+#GrandTitreProjet{
+    position:absolute;
+    top:150vw;
+    right:10vw;
+    bottom:103vw;
+    left:38vw;
+    font-size:3vw;
+    text-decoration:underline;
+}
+
+#ProjetTitre1{
+    position:absolute;
+    top:160vw;
+    right:0;
+    bottom:0;
+    left:7vw;
+    font-size:2vw;
+    float:left;
+}
+
+#ProjetTexte1{
+    
+    position:absolute;
+    top:164vw;
+    right:0;
+    bottom:0;
+    left:7vw;
+    float:left;
+    text-align:justify;
+    font-size:1.5vw;
+    width:40%;
+}
+
+#ProjetImage1{
+    height:20vw;
+    position:absolute;
+    top:164vw;
+    right:0;
+    bottom:0;
+    left:55vw;
+}
+
+#ProjetTitre2{
+    position:absolute;
+    top:200vw;
+    right:7vw;
+    bottom:0;
+    left:53vw;
+    font-size:2vw;
+    float:right;
+}
+
+#ProjetTexte2{
+    
+    position:absolute;
+    top:204vw;
+    right:7vw;
+    bottom:0;
+    left:53vw;
+    float:right;
+    text-align:justify;
+    font-size:1.5vw;
+    width:40%;
+}
+
+#ProjetImage2{
+    height:20vw;
+    position:absolute;
+    top:204vw;
+    right:0;
+    bottom:0;
+    left:25vw;
+}
+
+#ProjetTitre3{
+    position:absolute;
+    top:250vw;
+    right:0;
+    bottom:0;
+    left:7vw;
+    font-size:2vw;
+    float:left;
+}
+
+#ProjetTexte3{
+    
+    position:absolute;
+    top:254vw;
+    right:0;
+    bottom:0;
+    left:7vw;
+    float:left;
+    text-align:justify;
+    font-size:1.5vw;
+    width:40%;
+}
+
+#ProjetImage3{
+    height:20vw;
+    position:absolute;
+    top:254vw;
+    right:0;
+    bottom:0;
+    left:55vw;
+}
+
+#ProjetTitre4{
+    position:absolute;
+    top:300vw;
+    right:7vw;
+    bottom:0;
+    left:53vw;
+    font-size:2vw;
+    float:right;
+}
+
+#ProjetTexte4{
+    
+    position:absolute;
+    top:306vw;
+    right:7vw;
+    bottom:0;
+    left:53vw;
+    float:right;
+    text-align:justify;
+    font-size:1.5vw;
+    width:40%;
+}
+
+#ProjetImage4{
+    height:20vw;
+    position:absolute;
+    top:304vw;
+    right:0;
+    bottom:0;
+    left:25vw;
+}
+
+#ProjetTitre5{
+    position:absolute;
+    top:350vw;
+    right:0;
+    bottom:0;
+    left:7vw;
+    font-size:2vw;
+    float:left;
+}
+
+#ProjetTexte5{
+    
+    position:absolute;
+    top:354vw;
+    right:0;
+    bottom:0;
+    left:7vw;
+    float:left;
+    text-align:justify;
+    font-size:1.5vw;
+    width:40%;
+}
+
+#ProjetImage5{
+    height:20vw;
+    position:absolute;
+    top:354vw;
+    right:0;
+    bottom:0;
+    left:55vw;
+}
+
+footer{
+    height:20vw;
+    width:100%;
+    background-color: #000;
+    position:absolute;
+    top:400vw;
+    bottom:0;
+    z-index:0
+}
+
+#titreFooter{
+    color:#fff;
+    position:relative;
+    top:1vw;
+    font-size:3vw;
+    padding: 0 0 0 34vw;
+    text-decoration:underline;
+
+}
+
+#boiteProposition{
+    position:absolute;
+    left:70vw;
+    bottom:4vw
+}
+
+#boutonSuggestion{
+    position:absolute;
+    left:80vw;
+    bottom:1.5vw
+}
+
+#boiteMail{
+    position:absolute;
+    left:75.5vw;
+    bottom:16.5vw
+}
+#logoContactLigne1{
+    border-radius: 50%;
+    z-index:1;
+    height:5vw;
+    position:relative;
+    left:39vw;
+    top:3vw;
+    padding:0 1vw 0 1vw; 
+}
+
+#texteGmail{
+    opacity:0;
+    position:absolute;
+    top:17vw;
+    font-size:1.5vw;
+    left:36vw;
+    
+}
+
+#texteDiscord{
+    opacity:0;
+    position:absolute;
+    top:17vw;
+    font-size:1.5vw;
+    left:36vw;
+}
+
+#ImageGmail{
+    border-radius: 50%;
+    z-index:1;
+    height:5vw;
+    position:relative;
+    left:43vw;
+    top:3vw;
+    padding:0 1vw 0 1vw; 
+}
+
+#ImageDiscord{
+    border-radius: 50%;
+    z-index:1;
+    height:5vw;
+    position:relative;
+    left:43vw;
+    top:3vw;
+    padding:0 1vw 0 1vw; 
+}
+
+
