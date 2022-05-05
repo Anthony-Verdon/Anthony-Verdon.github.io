@@ -473,40 +473,33 @@ footer{
     z-index:0
 }
 
-#titreFooter{
+#titreFooterFrançais{
     color:#fff;
-    position:relative;
+    position:absolute;
     top:1vw;
     font-size:3vw;
-    padding: 0 0 0 34vw;
+    padding:0 0 0 35%;
     text-decoration:underline;
 
 }
 
-#boiteProposition{
+#titreFooterAnglais{
+    color:#fff;
     position:absolute;
-    left:70vw;
-    bottom:4vw
+    top:1vw;
+    font-size:3vw;
+    padding:0 0 0 38%;
+    text-decoration:underline;
+
 }
 
-#boutonSuggestion{
-    position:absolute;
-    left:80vw;
-    bottom:1.5vw
-}
-
-#boiteMail{
-    position:absolute;
-    left:75.5vw;
-    bottom:16.5vw
-}
 #logoContactLigne1{
     border-radius: 50%;
     z-index:1;
     height:5vw;
     position:relative;
     left:39vw;
-    top:3vw;
+    top:7vw;
     padding:0 1vw 0 1vw; 
 }
 
@@ -533,7 +526,7 @@ footer{
     height:5vw;
     position:relative;
     left:43vw;
-    top:3vw;
+    top:7vw;
     padding:0 1vw 0 1vw; 
 }
 
@@ -543,6 +536,6 @@ footer{
     height:5vw;
     position:relative;
     left:43vw;
-    top:3vw;
+    top:7vw;
     padding:0 1vw 0 1vw; 
 }
