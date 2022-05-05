@@ -214,16 +214,25 @@ nav ul li a:hover::after{
     font-size:1.5vw
 }
 
-#GrandTitreMoi{
+#GrandTitreMoiFrançais{
     position:absolute;
     top:60vw;
     right:10vw;
     bottom:103vw;
-    left:38vw;
+    left:37vw;
     font-size:3vw;
     text-decoration:underline;
 }
 
+#GrandTitreMoiAnglais{
+    position:absolute;
+    top:60vw;
+    right:10vw;
+    bottom:103vw;
+    left:42vw;
+    font-size:3vw;
+    text-decoration:underline;
+}
 #MoiTitre1{
     position:absolute;
     top:70vw;
@@ -298,7 +307,7 @@ nav ul li a:hover::after{
     top:150vw;
     right:10vw;
     bottom:103vw;
-    left:38vw;
+    left:41vw;
     font-size:3vw;
     text-decoration:underline;
 }
