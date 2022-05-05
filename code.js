@@ -43,7 +43,7 @@ function traductionFrancais(){
     const texteAnglais=document.getElementsByClassName("anglais");
     $(texteAnglais).removeClass('affiche');
     $(texteAnglais).addClass('efface');
-    const texteFrançais=document.getElementsByClassName("francais");
+    const texteFrançais=document.getElementsByClassName("français");
     $(texteFrançais).removeClass('efface');
     $(texteFrançais).addClass('affiche');
 
@@ -70,7 +70,7 @@ function traductionAnglais(){
     const texteAnglais=document.getElementsByClassName("anglais");
     $(texteAnglais).removeClass('efface');
     $(texteAnglais).addClass('affiche');
-    const texteFrançais=document.getElementsByClassName("francais");
+    const texteFrançais=document.getElementsByClassName("français");
     $(texteFrançais).removeClass('affiche');
     $(texteFrançais).addClass('efface');
 
